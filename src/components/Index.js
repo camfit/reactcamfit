@@ -1,3 +1,11 @@
+import axios from 'axios';
+
+axios.get('https://localhost:8080/board/list').then((Response)=>{
+    console.log(Response.data);
+}).catch((Error)=>{
+    console.log(Error);
+})
+
 const Index = () => {
     return ( <div>
     <div id="root">

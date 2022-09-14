@@ -5,6 +5,13 @@ axios.get('https://localhost:8080/board/list').then((Response)=>{
 }).catch((Error)=>{
     console.log(Error);
 })
+import a01 from '../img/수영장.jpg'
+import a02 from '../img/캠핑장.png'
+import b02 from '../img/캠핑장2.jpg'
+import a03 from '../img/온천.png'
+import c01 from '../img/bx_car1.png'
+import c02 from '../img/bx_car2.png'
+import c03 from '../img/bx_car3.png'
 
 const Index = () => {
     return ( <div>
@@ -18,35 +25,30 @@ const Index = () => {
                     </div>
                     <a href="search" class="rrr" type="submit">캠핑장 검색</a>
                     <div class="slider">
-                        <div><img src="img/bx_car1.png"/></div>
-                        <div><img src="img/bx_car2.png"/></div>
-                        <div><img src="img/bx_car3.png" alt=""/></div>
+                        <div><img src={c01}/></div>
+                        <div><img src={c02}/></div>
+                        <div><img src={c03} alt=""/></div>
                     </div>
-                    <div class="img_upload">
-                        <div class="share">
                             <a href="menu2">공유하기</a>
-                        </div>
                         <h2>캠핑 BEST PHOTO <a href="#">{'>>>'}</a></h2><br/>
                         <p>캠핑 다녀오셨나요? 추억을 남겨보세요!</p>
                         <div class="aa">
                             <div>
                                 <a href="menu.jsp">
-                                    <img src="img/캠핑장.png" />
+                                    <img src={a02} />
                                 </a>
                             </div>
                             <div>
                                 <a href="menu3.jsp">
-                                    <img src="img/수영장.jpg"/>
+                                    <img src={a01}/>
                                 </a>
                             </div>
                             <div> <a href="menu4.jsp">
-                                <img src="img/온천.png" />
+                                <img src={a03} />
                             </a></div>
-
-                        </div>
                         <h2>캠핑 Magazine <a href="#">{'>>'}</a></h2>
                         <div class="bb">
-                            <div><img src="img/캠핑장2.jpg" /></div>
+                            <div><img src={b02} /></div>
                         </div>
                     </div>
                 </div>

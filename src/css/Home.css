@@ -1,0 +1,31 @@
+.husearchbtn {
+    margin-top: -50px;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.husearchbtn ul li a img {
+    width: 87px;
+    float: left;
+}
+.slider > div {
+    width: inherit;
+    margin: 0 auto;
+}
+
+.img_upload {
+    position: relative;
+}
+
+.img_upload > h2 {
+    font-size: 1.5rem;
+}
+
+.img_upload > div {
+    margin: 10px;
+}
+
+.img_upload > .share {
+    position: absolute;
+    right: 0;
+}

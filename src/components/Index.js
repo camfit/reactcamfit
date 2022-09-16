@@ -9,20 +9,20 @@ import c03 from '../img/bx_car3.png'
 const Index = () => {
     return (<div>
         <div id="root">
-            <div class="container">
-                <div class="sub_container">
-                    <div class="content">
+            <div className="container">
+                <div className="sub_container">
+                    <div className="content">
                         <p><br />나르샤에서 <br />막힘없이 캠핑가자</p>
-                        <div class="searchbtn">
+                        <div className="searchbtn">
                             <input style={{ height: '43px', paddingLeft: '20px', display: 'inline !important', boxSizing: 'border-box' }} className="www" type="text" placeholder="캠핑장 검색" />
                         </div>
                         <a href="search" class="rrr" type="submit">캠핑장 검색</a>
-                        <div class="slider">
+                        <div className="slider">
                         </div>
-                        <a href="menu2">공유하기</a>
-                        <h2>캠핑 BEST PHOTO <a href="#">{'>>>'}</a></h2><br />
+                        <a style={{color: 'black', backgroundColor: 'wh', fontSize: '2.0rem', padding: '5px 20px', borderRadius: '15px',border: '3px solid #000000',}} href="menu3">공유하기</a>
+                        <p>캠핑 BEST PHOTO <a href="#" style={{color: '#0f8'}}>{'>>>'}</a></p><br />
                         <p>캠핑 다녀오셨나요? 추억을 남겨보세요!</p>
-                        <div class="aa">
+                        <div className="aa">
                             <div>
                                 <a href="menu.jsp">
                                     <img src={a02} />
@@ -36,8 +36,8 @@ const Index = () => {
                             <div> <a href="menu4.jsp">
                                 <img src={a03} />
                             </a></div>
-                            <h2>캠핑 Magazine <a href="#">{'>>'}</a></h2>
-                            <div class="bb">
+                            <p>캠핑 Magazine <a href="#">{'>>'}</a></p>
+                            <div className="bb">
                                 <div><img src={b02} /></div>
                             </div>
                         </div>

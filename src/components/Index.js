@@ -45,6 +45,7 @@ axios.get('http://localhost:8080/board/list',test).then((Response)=>{
     console.log(Response.data);
 }).catch((Error)=>{
     console.log(Error);
+    
 })
 
 const mydata = {username:"eee",password:"password"}
@@ -73,7 +74,7 @@ const Index = () => {
                         <div className="searchbtn">
                             <input style={{ height: '43px', paddingLeft: '20px', display: 'inline !important', boxSizing: 'border-box' }} className="www" type="text" placeholder="캠핑장 검색" />
                         </div>
-                        <a href="search" class="rrr" type="submit">캠핑장 검색</a>
+                        <a href="search" className="rrr" type="submit">캠핑장 검색</a>
                         <div className="slider">
                         </div>
                         <a style={{color: 'black', backgroundColor: 'wh', fontSize: '2.0rem', padding: '5px 20px', borderRadius: '15px',border: '3px solid #000000',}} href="menu3">공유하기</a>

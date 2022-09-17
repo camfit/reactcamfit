@@ -47,13 +47,12 @@ axios.get('http://localhost:8080/board/list',test).then((Response)=>{
     console.log(Error);
 })
 
-const mydata = {username:"bbb",password:"password"}
-
-useEffect(()=>{
-    axios.post("http://localhost:8080/member/join", mydata)
-},[]);
+const mydata = {username:"eee",password:"password"}
 
 const Index = () => {
+    useEffect(()=>{
+        axios.post("http://localhost:8080/member/join", mydata)
+    },[]);
     return ( <div>
     <div id="root">
         <div className="container">

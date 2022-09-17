@@ -177,7 +177,8 @@ a.qqq{
 }
 
 .foot{
-
+    display: fixed;
+    
 }
 
 .foot>ul{
@@ -190,9 +191,7 @@ a.qqq{
     background-color: #e1cdff;
     color: #000000;
     padding: 15px 30px 15px 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
+    margin: 0px 5px 10px 5px;
     font-size: 22px;
     border-radius: 10px;
     font-family: 'jua', sans-serif;

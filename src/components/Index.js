@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import axios from 'axios';
+import axios  from 'axios';
+
 import a01 from '../img/수영장.jpg'
 import a02 from '../img/캠핑장.png'
 import b02 from '../img/캠핑장2.jpg'
@@ -48,12 +48,8 @@ axios.get('http://localhost:8080/board/list',test).then((Response)=>{
     
 })
 
-const mydata = {username:"eee",password:"password"}
-
 const Index = () => {
-    useEffect(()=>{
-        axios.post("http://localhost:8080/member/join", mydata)
-    },[]);
+   
     return (
     <div id="root">
         <div className="container">

@@ -41,11 +41,10 @@ const myid = getCookie('userid');
 console.log(myid)
 var test = {"content":"content"}
 
-axios.get('http://localhost:8080/board/list',test).then((Response)=>{
+axios.get('http://localhost:8080/camp/list',test).then((Response)=>{
     console.log(Response.data);
 }).catch((Error)=>{
     console.log(Error);
-    
 })
 
 const Index = () => {

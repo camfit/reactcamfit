@@ -3,12 +3,12 @@ import a22 from '../img/222.jpg'
 import a33 from '../img/333.jpg'
 
 const Menu1 = () => {
-    return (<div>
+    return (
         <div id="root">
             <div className="container">
                 <div className="sub_container">
                     <div className="content">
-                        <p><br />나르샤 프로젝트<br />실시간예약</p>
+                        <p className="aaa"><br />나르샤 프로젝트<br />실시간예약</p>
                         <form>
                             <label>날짜 </label>
                             <p><input type="date" style={{padding: '0.5rem'}} value="2022-5-26" /></p>
@@ -38,21 +38,15 @@ const Menu1 = () => {
                         <div>
                             <img className="www" src={a11} alt="제천워터파크캠핑랜드(구.제천캠핑랜드)" />
                             <p>구봉산오토캠핑장 나인힐스 4만원</p>
-                            <p>경기 용인시</p><br /><br /><br />
+                            <p style={{textAlign: 'right',}}>경기 용인시</p><br /><br /><br />
                             <img className="www" src={a22} alt="제천워터파크캠핑랜드(구.제천캠핑랜드)" />
                             <p>제천워터파크캠핑랜드(구.제천캠핑랜드) 13만원 </p>
-                            <p>충북 제천시</p><br /><br /><br /><br />
+                            <p style={{textAlign: 'right',}}>충북 제천시</p><br /><br /><br /><br />
                         </div>
-                        <p>최근 본 캠핑장<br /></p>
-                        <img className="www" src={a33} alt="구봉산오토캠핑장 나인힐스" />
-                        <h1>구봉산오토캠핑장 나인힐스 4만원</h1>
-                        <h1>경기 용인시</h1><br /><br /><br />
-                        <button className="rrr" type="submit">최근 본 캠핑장 기록 삭제</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     );
 }
 export default Menu1;

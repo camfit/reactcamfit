@@ -13,7 +13,7 @@ const Signup = () => {
                 <h1><br/>생년월일<br/></h1>
                 <p><input type="date" value="2000-01-01" style = {{padding: '0.5rem',}}/><br/><br/></p>
                 전화번호 <input type="text"/><br/>
-                <input classsName="rrr" type="submit" value="회원가입"/>
+                <input id="btn1" classsName="rrr" type="submit" value="회원가입"/>
             </form>
         </div>
     </div>

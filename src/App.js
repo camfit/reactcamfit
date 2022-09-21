@@ -1,4 +1,6 @@
 import './App.css';
+import'./css/Home.css';
+import'./css/reset.css';
 import Head from './components/Head';
 import Foot from './components/Foot';
 import Index from './components/Index';

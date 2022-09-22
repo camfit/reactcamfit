@@ -1,16 +1,16 @@
+import a33 from '../img/123.png'
 const Menu3 = () => {
     return (
-        <div id="root">
         <div className="container">
-            <div className="content">
-                <p className="aaa"><br/>마이페이지<br/>회원 정보 확인하기</p>
-                <br/>
-                <p>회원가입을 하면 많은 기능을 사용할 수 있습니다.</p>
-                <a style={{color: 'white',}} class="rrr" href="signin">로그인</a>
-                <a style={{color: 'white',}} class="rrr" href="signup">회원가입</a>
-            </div>
+        <div className="content">
+        <p className="aa">Camping Guide<br />마이페이지</p>
+        <p className="aaa">회원 정보 확인하기</p>
+                    <p style={{ marginBottom: '3rem' }}>회원가입을 하면 많은 기능을 사용할 수 있습니다.</p>
+                    <a class="btn"href="signin">로그인</a>
+                    <a class="btn" style={{ marginLeft: '0.8rem', }} href="signup">회원가입</a>
+                    <img src={a33}></img>
         </div>
-    </div>
-        );
-    }
-    export default Menu3;
+        </div>
+    );
+}
+export default Menu3;

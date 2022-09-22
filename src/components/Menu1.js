@@ -4,14 +4,12 @@ import a33 from '../img/333.jpg'
 
 const Menu1 = () => {
     return (
-        <div id="root">
             <div className="container">
-                <div className="sub_container">
                     <div className="content">
-                        <p className="aaa"><br />나르샤 프로젝트<br />실시간예약</p>
+                        <p className="aa">Camping Guide<br />실시간예약</p>
                         <form>
                             <label>날짜 </label>
-                            <p><input type="date" style={{padding: '0.5rem'}} value="2022-5-26" /></p>
+                            <p><input type="date" class="asd"value="2022-5-26" /></p>
                             <label><br /><br />지역</label>
                             <br /><br />
                             <input type="checkbox" id="vehicle1" />
@@ -30,23 +28,23 @@ const Menu1 = () => {
                             <label for="vehicle7">경상남도</label>
                             <input type="checkbox" id="vehicle8" />
                             <label for="vehicle8">경상북도</label><br /><br />
-                            <input style={{height: '43px', paddingLeft: '20px', display: 'inline',
-                boxSizing: 'border-box',}} class="www" type="text" placeholder="캠핑장 검색" /><br />
-                            <a href="search" class="rrr" type="submit">실시간 검색</a>
+                            <input  class="asd" type="text" placeholder="캠핑장 검색" /><br />
+                            <a href="search" class="btn" type="submit">실시간 검색</a>
                         </form>
-                        <p>추천 캠핑장</p>
-                        <div>
-                            <img className="www" src={a11} alt="제천워터파크캠핑랜드(구.제천캠핑랜드)" />
-                            <p>구봉산오토캠핑장 나인힐스 4만원</p>
-                            <p style={{textAlign: 'right',}}>경기 용인시</p><br /><br /><br />
-                            <img className="www" src={a22} alt="제천워터파크캠핑랜드(구.제천캠핑랜드)" />
-                            <p>제천워터파크캠핑랜드(구.제천캠핑랜드) 13만원 </p>
-                            <p style={{textAlign: 'right',}}>충북 제천시</p><br /><br /><br /><br />
+                        <p className="aaa">추천 캠핑장 1</p><br />
+                    <img src={a33} />
+                    <p className="bbb">캠핑장 설명 1</p><br />
+                    <p className="ccc">캠핑장1: OO군</p>
+                    <p className="aaa">추천 캠핑장 2</p><br />
+                    <img src={a22}/>
+                    <p className="bbb">캠핑장 설명 2</p><br />
+                    <p className="ccc">캠핑장2: OO군</p>
+                    <p className="aaa">추천 캠핑장 3</p><br />
+                    <img src={a11} />
+                    <p>캠핑장 설명 3</p><br />
+                    <p className="ccc">캠핑장3: OO군</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
     );
 }
 export default Menu1;

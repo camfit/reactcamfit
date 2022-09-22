@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-p{
-    color:white;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,65 +9,94 @@ p{
     text-decoration: none;
     font-family: 'Do Hyeon', sans-serif;
 }
-body{
+
+body {
     background-color: rgb(235, 252, 255);
 }
-.container{
+
+.container {
     display: flex;
     border: 3px solid black;
-    background-color: #284ade;
+    background-color: #2344ff;
     max-width: 30rem;
-    margin:0 auto;
+    margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
+    box-shadow: 0 5px 18px -7px rgba(0, 0, 0, 1);
+    padding-bottom: 10rem;
 }
 
-img{
-    max-width: 25rem;
-    max-height: 20rem; 
+.content {
+    margin: 0 auto;
+
+}
+
+p {
+    color: white;
+}
+
+img {
+    width: 27rem;
+    height: 18rem;
     display: block;
-    }
+}
 
 .btn {
     color: black;
     background-color: white;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.0rem;
-    padding: 2px 8px;
+    padding: 3px 12px;
     border-radius: 15px;
     border: 3px solid #000000;
     text-decoration: none;
 }
 
-.head{
-    text-align:center;
+.head, .foot {
+    max-width: 30rem;
+    margin: 0 auto;
 }
 
-.foot{
-    
+.head_L {
+    text-align: left;
 }
 
-.foot>ul{
+.head_R {
+    text-align: right;
 }
 
-.foot>ul>li>a{
+.head>div>a {
+    color: black;
+    font-size: 2rem;
+}
+
+.foot>ul {
+    position: fixed;
+    display: flex;
+    line-height: 4rem;
+    list-style-type: none;
+    bottom: 0;
+}
+
+.foot>ul>li>a {
+    margin-left: 20px;
     background-color: #c3eeff;
     color: #000000;
     padding: 15px 30px 15px 30px;
-    font-size: 22px;
+    font-size: 1.5rem;
     border-radius: 10px;
+    box-shadow: 0 5px 18px -7px rgba(0, 0, 0, 1);
     font-family: 'jua', sans-serif;
-    box-shadow: 0 5px 18px -7px rgba(0,0,0,1);
 }
 
-.aa{
+.aa {
     font-size: 2rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 1rem 0;
+    padding-top: 1rem;
 }
-.asd{
+
+.asd {
     height: 43px;
     padding-left: 20px;
     display: inline;
@@ -77,22 +104,17 @@ img{
 
 }
 
-.aaa{
+.aaa {
     margin-top: 3rem;
     font-size: 1.7rem;
     font-family: 'jua', sans-serif;
 }
 
-.bbb{
+.bbb {
     font-size: 1rem;
 }
 
-
-.ccc{
+.ccc {
     font-size: 1rem;
     text-align: right;
-}
-
-.content{
-    margin: 0 auto;
 }

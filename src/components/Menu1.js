@@ -6,7 +6,7 @@ const Menu1 = () => {
     return (
             <div className="container">
                     <div className="content">
-                        <p className="aa">Camping Guide<br />실시간예약</p>
+                        <p className="aa">Camping Guide<br />캠핑장 예약</p>
                         <form>
                             <label>날짜 </label>
                             <p><input type="date" class="asd"value="2022-5-26" /></p>
@@ -41,7 +41,7 @@ const Menu1 = () => {
                     <p className="ccc">캠핑장2: OO군</p>
                     <p className="aaa">추천 캠핑장 3</p><br />
                     <img src={a11} />
-                    <p>캠핑장 설명 3</p><br />
+                    <p className="bbb">캠핑장 설명 3</p><br />
                     <p className="ccc">캠핑장3: OO군</p>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ const Menu2 = () => {
                     <p className="ccc">캠핑장2: OO군</p>
                     <p className="aaa">커뮤니티 제목3</p><br />
                     <img src={a11} />
-                    <p>커뮤니티 내용3</p><br />
+                    <p className="bbb">커뮤니티 내용3</p><br />
                     <p className="ccc">캠핑장3: OO군</p>
                     <a href="community" className="btn" type="submit">커뮤니티 글 작성하기</a>
                 </div>

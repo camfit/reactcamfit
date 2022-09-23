@@ -58,8 +58,8 @@ const Index = () => {
         <div className="container">
                 <div className="content">
                     <p className="aa">Camping Guide<br/>홈 화면</p>
-                    <input type ="text"></input>
-                    <a href="search" className="btn" type="submit">캠핑장 검색</a>
+                    <input type ="text" className="asd" ></input>
+                    <a href="search" style={{marginLeft: '1rem'}} className="btn" type="submit">캠핑장 검색</a>
                     <p className="aaa">추천 캠핑장 [광고]</p><br />
                     <img src={a33} />
                     <p className="bbb">캠핑장 설명 1</p><br />

@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import cookies from 'react-cookies';
+import a33 from '../img/123.png'
 
 const Signup = () => {
     const [alert,setAlert] = useState('');
@@ -46,10 +47,9 @@ const Signup = () => {
     };
 
     return (
-        <div id="root">
         <div className="container">
             <div className="content">
-            <p><br/>회원가입</p>
+            <p className="aa">회원가입</p>
             <form>
                 아이디 <input type="text" name="username"
                         onChange={ 
@@ -87,8 +87,8 @@ const Signup = () => {
                         }/><br/>
                 <input className="rrr" type="button" value="회원가입" onClick={useSavefn}/>
             </form>
+            <img style={{paddingBottom: '5rem'}} src={a33}></img>
         </div>
-    </div>
     </div>
     );
 }

@@ -1,14 +1,15 @@
+import a33 from '../img/123.png'
 const Signin = () => {
     return (
-<div className="container">
-<div className="content">
-    <p><br/>마이페이지</p>
-    <p>로그인해서 많은 기능을 누려보세요!</p><br/>
-    아이디 <input name="username" type="text"/><br/><br/>
-    비밀번호 <input name="password" type="password"/><br/>
-    <input className="rrr" type="submit" value="로그인"/>
-</div>
-</div>
+    <div className="container">
+        <div className="content">
+            <p className="aaa" id="aaa">로그인해서 많은 기능을 누려보세요!</p>
+            <p className="bbb"> 아이디 </p><input id="aaa" className="asd" name="username" type="text"/>
+            <p className="bbb"> 비밀번호 </p><input id="aaa" className="asd" name="password" type="password"/><br/>
+            <input class="btn" type="submit" value="로그인"/>
+            <img src={a33}></img>
+        </div>
+    </div>
 );
 }
 export default Signin;

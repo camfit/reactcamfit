@@ -1,38 +1,139 @@
-.husearchbtn {
-    margin-top: -50px;
-    padding: 15px 0;
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
-.husearchbtn ul li a img {
-    width: 87px;
-    float: left;
+body {
+    background-color: rgb(235, 252, 255);
 }
-.slider > div {
-    width: inherit;
+
+.container {
+    display: flex;
+    border: 3px solid black;
+    background-color: #2344ff;
+    max-width: 30rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px -7px rgba(0, 0, 0, 1);
+    padding-bottom: 10rem;
+}
+
+.content {
+    margin: 0 auto;
+
+}
+
+p {
+    color: white;
+}
+
+img {
+    width: 27rem;
+    height: 15rem;
+    display: block;
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.0rem;
+    padding: 3px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 5px 18px -7px rgba(0, 0, 0, 1);
+}
+
+.head, .foot {
+    max-width: 30rem;
     margin: 0 auto;
 }
 
-.img_upload {
-    position: relative;
+.head_L {
+    text-align: left;
 }
 
-.img_upload > h2 {
-    font-size: 1.5rem;
+.head_R {
+    text-align: right;
 }
 
-.img_upload > div {
-    margin: 10px;
+.head>div>a {
+    color: black;
+    font-size: 2rem;
 }
 
-.img_upload > .share {
-    position: absolute;
-    right: 0;
+
+.foot>ul {
+    position: fixed;
+    display: flex;
+    line-height: 5.5rem;
+    list-style-type: none;
+    bottom: 0;
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
+.foot>ul>li>a {
+    margin-left: 10px;
+    background-color: #c3eeff;
+    color: #000000;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px -7px rgba(0, 0, 0, 1);
+    font-family: 'jua', sans-serif;
+}
+
+.aa {
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding-top: 1rem;
+}
+
+.asd {
+    height: 2rem;
+    padding-left: 20px;
+    display: inline;
+    box-sizing: 'border-box';
+    box-shadow: 0 5px 18px -7px #000;
+    border-radius: 15px;
+
+}
+
+input:focus{
+    outline: 4px solid #0f8;
+}
+
+.aaa {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    font-family: 'jua', sans-serif;
+}
+
+.bbb {
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.ccc {
+    font-size: 1rem;
+    text-align: right;
+}
+
+#aaa{
+    margin-bottom: 1.5rem;
+}
+.btn:hover{
+    outline: 3px solid rgb(0, 0, 0);
+}
+.foot>ul>li>a:hover{
+    outline: 7px solid rgb(0, 255, 170);
 }

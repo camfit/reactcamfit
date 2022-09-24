@@ -11,7 +11,7 @@ const Community = () => {
             <div>
                 <input type="file" className='p50'></input>
             </div>
-            <img src={a33}></img>
+            <img src={a33} alt="배경화면"></img>
         </div>
     </div>
 );

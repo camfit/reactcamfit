@@ -11,7 +11,7 @@ const Menu1 = () => {
                 <p className="aa">Camping Guide<br />캠핑장 예약</p>
                 <form>
                     <label>날짜 </label>
-                    <p><input type="date" 
+                    <p><input type="date"  className='asd'
                             style={{padding: '0.5rem'}} 
                             value={mdate}
                             onChange={ (e)=>{ 
@@ -37,20 +37,20 @@ const Menu1 = () => {
                     <input type="checkbox" id="vehicle8" />
                     <label htmlFor="vehicle8">경상북도</label><br /><br />
                     <input style={{height: '43px', paddingLeft: '20px', display: 'inline',
-        boxSizing: 'border-box',}} className="www" type="text" placeholder="캠핑장 검색" /><br />
-                    <a href="search" className="rrr" type="submit">실시간 검색</a>
+        boxSizing: 'border-box',}} className="asd" type="text" placeholder="캠핑장 검색" /><br />
+                    <a href="search" className="btn" type="submit">실시간 검색</a>
                 </form>
                 <p className="aaa">추천 캠핑장 1</p><br />
-            <img src={a33} />
-            <p className="bbb">캠핑장 설명 1</p><br />
+            <img src={a33} alt="a33"/>
+            <p className="bbb">캠핑장 설명 1</p>
             <p className="ccc">캠핑장1: OO군</p>
-            <p className="aaa">추천 캠핑장 2</p><br />
-            <img src={a22}/>
-            <p className="bbb">캠핑장 설명 2</p><br />
+            <p className="aaa">추천 캠핑장 2</p>
+            <img src={a22} alt="a22"/>
+            <p className="bbb">캠핑장 설명 2</p>
             <p className="ccc">캠핑장2: OO군</p>
-            <p className="aaa">추천 캠핑장 3</p><br />
-            <img src={a11} />
-            <p className="bbb">캠핑장 설명 3</p><br />
+            <p className="aaa">추천 캠핑장 3</p>
+            <img src={a11} alt="a11" />
+            <p className="bbb">캠핑장 설명 3</p>
             <p className="ccc">캠핑장3: OO군</p>
             </div>
         </div>          

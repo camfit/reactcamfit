@@ -18,15 +18,15 @@ const Menu2 = () => {
                     <input className="asd" type="text" placeholder="게시물 찾기" /><br />
                     <a href="#" className="btn" type="submit">게시물 검색</a>
                     <p className="aaa">커뮤니티 제목</p><br />
-                    <img src={a33} />
+                    <img src={a33}  alt="a33"/>
                     <p className="bbb">커뮤니티 내용.</p><br />
                     <p className="ccc">캠핑장1: OO군</p>
                     <p className="aaa">커뮤니티 제목2</p><br />
-                    <img src={a22}/>
+                    <img src={a22} alt="a22"/>
                     <p className="bbb">커뮤니티 내용2</p><br />
                     <p className="ccc">캠핑장2: OO군</p>
                     <p className="aaa">커뮤니티 제목3</p><br />
-                    <img src={a11} />
+                    <img src={a11}  alt="a11"/>
                     <p className="bbb">커뮤니티 내용3</p><br />
                     <p className="ccc">캠핑장3: OO군</p>
                     <a href="community" className="btn" type="submit">커뮤니티 글 작성하기</a>

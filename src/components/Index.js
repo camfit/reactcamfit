@@ -56,7 +56,7 @@ const Index = () => {
                     <input type ="text" className="asd" ></input>
                     <a href="search" style={{marginLeft: '1rem'}} className="btn" type="submit">캠핑장 검색</a>
                     <p className="aaa">추천 캠핑장 [광고]</p><br />
-                    <img src={a33} />
+                    <img src={a33}  alt="배경화면"/>
                     <p className="bbb">캠핑장 설명 1</p><br />
                     <p className="ccc">캠핑장1: OO군</p>
                     

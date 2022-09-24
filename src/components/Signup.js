@@ -41,7 +41,6 @@ const Signup = () => {
                 setAlert('이미 존재하는 회원 이름입니다.');
             }
             else{
-               
             }
         });
     };
@@ -87,7 +86,7 @@ const Signup = () => {
                         }/><br/>
                 <input className="btn" type="button" value="회원가입" onClick={useSavefn}/>
             </form>
-            <img style={{paddingBottom: '5rem'}} src={a33}></img>
+            <img style={{paddingBottom: '5rem'}} src={a33} alt="배경화면"></img>
         </div>
     </div>
     );

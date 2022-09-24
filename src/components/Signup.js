@@ -18,7 +18,6 @@ const Signup = () => {
     const useSavefn=()=>{
         axios.post("http://localhost:8080/member/join", mydata)
         .then( 
-            // 22020917 pmh 해야함
             (result)=>{
                 console.log(result);
                 const expires = new Date();

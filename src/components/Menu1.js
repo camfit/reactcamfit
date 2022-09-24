@@ -1,9 +1,41 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import a11 from '../img/111.jpg'
 import a22 from '../img/222.jpg'
 import a33 from '../img/333.jpg'
 
+import axios from 'axios';
+
 const Menu1 = () => {
+
+    const [camps,setCamps] = useState([])
+    const [testcampes,setTestcamps] = useState('');
+    useEffect(()=>{
+
+        axios.get('http://localhost:8080/camp/list')
+        .then((result)=>{
+            // console.log(result.data);
+            result.data.map((row)=>{
+                console.log(row)
+            })
+            setCamps(result.data);
+            setTestcamps(camps.map((row)=>{
+                return 
+                (
+                <div>
+                    <p className="bbb">111111111</p>
+                    <p className="ccc">2222222222222</p>
+                    <p className="aaa">추333333333332</p>
+                </div>
+                )
+            }) )
+        })
+        .catch((e)=>{
+            console.log(e);
+            console.log("에러생김")
+        })
+
+    },[])
+
     const [mdate,setMdate] = useState("2022-05-26");
     return (
         <div className="container">
@@ -40,14 +72,20 @@ const Menu1 = () => {
                     <a href="search" className="btn" type="submit">실시간 검색</a>
                 </form>
                 <p className="aaa">추천 캠핑장 1</p><br />
+            {
+                 testcampes              
+            }
+
             <img src={a33} alt="a33"/>
-            <p className="bbb">캠핑장 설명 1</p>
-            <p className="ccc">캠핑장1: OO군</p>
-            <p className="aaa">추천 캠핑장 2</p>
+            
+
+
             <img src={a22} alt="a22"/>
             <p className="bbb">캠핑장 설명 2</p>
             <p className="ccc">캠핑장2: OO군</p>
             <p className="aaa">추천 캠핑장 3</p>
+
+
             <img src={a11} alt="a11" />
             <p className="bbb">캠핑장 설명 3</p>
             <p className="ccc">캠핑장3: OO군</p>

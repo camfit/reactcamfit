@@ -8,33 +8,15 @@ import axios from 'axios';
 const Menu1 = () => {
 
     const [camps,setCamps] = useState([])
-    const [testcampes,setTestcamps] = useState('');
     useEffect(()=>{
-
         axios.get('http://localhost:8080/camp/list')
         .then((result)=>{
-            // console.log(result.data);
-            result.data.map((row)=>{
-                console.log(row)
-            })
             setCamps(result.data);
-            setTestcamps(camps.map((row)=>{
-                return 
-                (
-                <div>
-                    <p className="bbb">111111111</p>
-                    <p className="ccc">2222222222222</p>
-                    <p className="aaa">추333333333332</p>
-                </div>
-                )
-            }) )
         })
         .catch((e)=>{
             console.log(e);
-            console.log("에러생김")
         })
-
-    },[])
+    },[]);
 
     const [mdate,setMdate] = useState("2022-05-26");
     return (
@@ -71,16 +53,20 @@ const Menu1 = () => {
         boxSizing: 'border-box',}} className="asd" type="text" placeholder="캠핑장 검색" /><br />
                     <a href="search" className="btn" type="submit">실시간 검색</a>
                 </form>
-                <p className="aaa">추천 캠핑장 1</p><br />
+                
             {
-                 testcampes              
+                 camps.map((row)=>{
+                    return (
+                        <div key={row.id}>
+                        <p className='aaa'>{row.name}</p>
+                        <img src={a33} alt="a33"/>
+                        <p className="bbb">{row.explanation}</p>
+                        <p className="ccc">{row.area}</p>
+                        </div>
+                    )
+                 })             
             }
 
-            <img src={a33} alt="a33"/>
-            
-
-
-            <img src={a22} alt="a22"/>
             <p className="bbb">캠핑장 설명 2</p>
             <p className="ccc">캠핑장2: OO군</p>
             <p className="aaa">추천 캠핑장 3</p>

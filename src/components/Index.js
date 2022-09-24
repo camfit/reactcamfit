@@ -61,7 +61,7 @@ const Index = () => {
                     <p className="ccc">캠핑장1: OO군</p>
                     
                         <a className="btn" href="menu2">캠핑 다녀오셨나요? 추억을 남겨보세요!</a>
-                        <p className="aaa">캠핑 BEST PHOTO <a className="aaa" href="#" style={{color: '#0f8'}}>{'>>>'}</a></p><br />
+                        <p className="aaa">캠핑 BEST PHOTO <a className="aaa" href="/menu2" style={{color: '#858585'}}>{'>>>'}</a></p><br />
                                 <a href="menu2">
                                     <img src={a02} alt="a02"/>
                                 </a>

@@ -50,17 +50,17 @@ const Signup = () => {
             <div className="content">
             <p className="aa">회원가입</p>
             <form>
-            <p className="bbb"> 아이디 </p><input  id="aaa" className="asd" type="text" name="username"
+            <p className="bbb qqq"> 아이디 </p><input  id="aaa" className="asd" type="text" name="username"
                         onChange={ 
                             (e)=>{  mydata.username = e.target.value; setMydata(mydata); }
                         }/>{alert}
-                <p className="bbb"> 비밀번호 </p><input  id="aaa" className="asd" type="password" name="password" onChange={ 
+                <p className="bbb qqq"> 비밀번호 </p><input  id="aaa" className="asd" type="password" name="password" onChange={ 
                             (e)=>{  mydata.password = e.target.value; setMydata(mydata); }
                         }/>
-                <p className="bbb"> 비밀번호 확인 </p><input  id="aaa"className="asd" type="password" name="password" onChange={ 
+                <p className="bbb qqq"> 비밀번호 확인 </p><input  id="aaa"className="asd" type="password" name="password" onChange={ 
                             (e)=>{  mydata.confirmpassword = e.target.value; setMydata(mydata); }
                         } />
-                <p className="bbb" id="aaa" >성별: 남<input type="radio" name="gender" value="남"checked onChange={ (e)=>{
+                <p className="bbb qqq" id="aaa" >성별: 남<input type="radio" name="gender" value="남"checked onChange={ (e)=>{
                             mydata.gender="남";
                             setMydata(mydata);
                         }
@@ -70,7 +70,7 @@ const Signup = () => {
                             setMydata(mydata);
                         }
                     } /></p>
-                <p className='bbb' >생년월일</p>
+                <p className='bbb qqq' >생년월일</p>
                 <p><input className="asd" id="aaa" type="date" value={mydata.dateOfBirth} style = {{padding: '0.5rem',}} 
                 name="dateOfBirth" onChange={ (e)=>{ 
                     setMydata( { username:mydata.username, 
@@ -81,7 +81,7 @@ const Signup = () => {
                             gender:mydata.gender} );
                     }  
                 } /><br/><br/></p>
-                <p className="bbb" >전화번호</p><input className="asd" id="aaa" type="text" onChange={ 
+                <p className="bbb qqq" >전화번호</p><input className="asd" id="aaa" type="text" onChange={ 
                             (e)=>{  mydata.phoneNumber = e.target.value; setMydata(mydata); }
                         }/><br/>
                 <input className="btn" type="button" value="회원가입" onClick={useSavefn}/>

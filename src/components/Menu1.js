@@ -10,16 +10,15 @@ const Menu1 = () => {
             <div className="content">
                 <p className="aa">Camping Guide<br />캠핑장 예약</p>
                 <form>
-                    <label>날짜 </label>
-                    <p><input type="date"  className='asd'
+                    <label className="bbb qqq">날짜 </label>
+                    <p id="aaa"><input type="date"  className='asd'
                             style={{padding: '0.5rem'}} 
                             value={mdate}
                             onChange={ (e)=>{ 
                                 setMdate(e.target.value);
                             }} 
                             /></p>
-                    <label><br /><br />지역</label>
-                    <br /><br />
+                    <label id="aaa">지역<br/></label>
                     <input type="checkbox" id="vehicle1" />
                     <label htmlFor="vehicle1">서울</label>
                     <input type="checkbox" id="vehicle2" />

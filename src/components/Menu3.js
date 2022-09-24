@@ -8,7 +8,7 @@ const Menu3 = () => {
                 <p className="bbb" id="aaa">회원가입을 하면 많은 기능을 사용할 수 있습니다.</p>
                 <a className="btn"href="signin">로그인</a>
                 <a className="btn" style={{ marginLeft: '0.8rem', }} href="signup">회원가입</a>
-                <img src={a33}></img>
+                <img src={a33} alt="a33"></img>
             </div>
         </div>
     );

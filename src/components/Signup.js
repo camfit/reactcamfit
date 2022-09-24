@@ -51,28 +51,28 @@ const Signup = () => {
             <div className="content">
             <p className="aa">회원가입</p>
             <form>
-                아이디 <input type="text" name="username"
+            <p className="bbb"> 아이디 </p><input  id="aaa" className="asd" type="text" name="username"
                         onChange={ 
                             (e)=>{  mydata.username = e.target.value; setMydata(mydata); }
-                        }/>{alert}<br/><br/>
-                비밀번호 <input type="password" name="password" onChange={ 
+                        }/>{alert}
+                <p className="bbb"> 비밀번호 </p><input  id="aaa" className="asd" type="password" name="password" onChange={ 
                             (e)=>{  mydata.password = e.target.value; setMydata(mydata); }
-                        }/><br/><br/>
-                비밀번호 확인 <input type="password" name="repassword" onChange={ 
+                        }/>
+                <p className="bbb"> 비밀번호 확인 </p><input  id="aaa"className="asd" type="password" name="password" onChange={ 
                             (e)=>{  mydata.confirmpassword = e.target.value; setMydata(mydata); }
-                        } /><br/><br/>
-                성별: 남 <input type="radio" name="gender" value="남" checked onChange={ (e)=>{
+                        } />
+                <p className="bbb" id="aaa" >성별: 남<input type="radio" name="gender" value="남"checked onChange={ (e)=>{
                             mydata.gender="남";
                             setMydata(mydata);
                         }
                     } />
-                여 <input type="radio" name="gender" value="여"  onChange={ (e)=>{ 
+                여<input type="radio" name="gender" value="여" onChange={ (e)=>{ 
                             mydata.gender="여";
                             setMydata(mydata);
                         }
-                    } /><br/>
-                <h1><br/>생년월일<br/></h1>
-                <p><input type="date" value={mydata.dateOfBirth} style = {{padding: '0.5rem',}} 
+                    } /></p>
+                <p className='bbb' >생년월일</p>
+                <p><input className="asd" id="aaa" type="date" value={mydata.dateOfBirth} style = {{padding: '0.5rem',}} 
                 name="dateOfBirth" onChange={ (e)=>{ 
                     setMydata( { username:mydata.username, 
                             password:mydata.password, 
@@ -82,10 +82,10 @@ const Signup = () => {
                             gender:mydata.gender} );
                     }  
                 } /><br/><br/></p>
-                전화번호 <input type="text" name="phoneNumber" onChange={ 
+                <p className="bbb" >전화번호</p><input className="asd" id="aaa" type="text" onChange={ 
                             (e)=>{  mydata.phoneNumber = e.target.value; setMydata(mydata); }
                         }/><br/>
-                <input className="rrr" type="button" value="회원가입" onClick={useSavefn}/>
+                <input className="btn" type="button" value="회원가입" onClick={useSavefn}/>
             </form>
             <img style={{paddingBottom: '5rem'}} src={a33}></img>
         </div>

@@ -16,7 +16,7 @@ const Menu2 = () => {
                 <div className="content">
                     <p className="aa">Camping Guide<br />커뮤니티</p>
                     <input className="asd" type="text" placeholder="게시물 찾기" /><br />
-                    <a href="#" className="btn" type="submit">게시물 검색</a>
+                    <a href="/Rsearch" className="btn" type="submit">게시물 검색</a>
                     <p className="aaa">커뮤니티 제목</p><br />
                     <img src={a33}  alt="a33"/>
                     <p className="bbb">커뮤니티 내용.</p><br />

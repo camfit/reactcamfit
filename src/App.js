@@ -11,6 +11,7 @@ import Signin from './components/Signin';
 import Signup from './components/Signup';
 import Community from './components/Community';
 import Search from './components/Search';
+import Rsearch from './components/Rsearch';
 import Manager from './components/Manager';
 import Camping from './components/Camping';
 
@@ -31,6 +32,7 @@ function App() {
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/community" element={<Community />}></Route>
           <Route path="/search" element={<Search />}></Route>
+          <Route path="/Rsearch" element={<Rsearch />}></Route>
           <Route path="/manager" element={<Manager />}></Route>
           <Route path="/camping" element={<Camping />}></Route>
           {/* <Route path="/u/*" element={<Menu/>}></Route> */}

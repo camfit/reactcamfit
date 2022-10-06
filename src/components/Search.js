@@ -10,6 +10,7 @@ const Search = () => {
                                 <img src={a11} alt="a11" />
                                 <p className="bbb">캠핑장 설명 3</p>
                                 <p className="ccc">캠핑장3: OO군</p>
+                                <a href="/reservation" className="btn">예약하기</a>
                         </div>
                 </div>
                 );

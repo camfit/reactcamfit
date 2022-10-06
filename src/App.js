@@ -14,6 +14,7 @@ import Search from './components/Search';
 import Rsearch from './components/Rsearch';
 import Manager from './components/Manager';
 import Camping from './components/Camping';
+import Reservation from './components/Reservation'
 
 import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -35,6 +36,7 @@ function App() {
           <Route path="/Rsearch" element={<Rsearch />}></Route>
           <Route path="/manager" element={<Manager />}></Route>
           <Route path="/camping" element={<Camping />}></Route>
+          <Route path="/reservation" element={<Reservation />}></Route>
           {/* <Route path="/u/*" element={<Menu/>}></Route> */}
           {/* 상단에 위치하는 라우트들의 규칙을 모두 확인, 일치하는 라우트가 없는경우 처리 */}
           {/* <Route path="*" element={<NotFound />}></Route> */}
